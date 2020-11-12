@@ -1,0 +1,287 @@
+body{
+	padding: 0;
+	margin: 0;
+	margin: 0 auto 0 auto;width: 800px;height: auto;
+}
+
+main{
+	margin-bottom: 40px;
+}
+.main-Test{
+	display: block;
+	background: red;
+	color: white;
+	height: auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	padding-bottom: 25px;
+}
+.main-Test .ul-categories {
+
+	background: orange;
+	height: 60px;
+	display: flex;
+	justify-content: space-around;
+}
+.main-Test .ul-categories span{
+
+	cursor: pointer;
+	margin-top: 10px;
+	padding-top: 10px;
+	width: 130px;
+	text-align: center;
+	height: 30px;
+	border-radius: 3px;
+
+
+}
+.main-Test .ul-categories span:hover{
+
+	background: green;
+	
+}
+/**/
+
+.start-Test{
+
+
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+}
+
+.start-Test span{
+	cursor: pointer;
+	width: 150px;
+	text-align: center;
+	height: 40px;
+	padding-top: 15px;
+	background: blue;
+}/**/
+
+
+.next-Test{
+
+
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+	display: none;
+}
+
+.next-Test span{
+	cursor: pointer;
+	width: 150px;
+	text-align: center;
+	height: 40px;
+	padding-top: 15px;
+	background: blue;
+}/**/
+
+
+
+
+
+
+
+
+
+
+.dstart-Test{
+
+
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+}
+
+.dstart-Test span{
+	cursor: pointer;
+	width: 150px;
+	text-align: center;
+	height: 40px;
+	padding-top: 15px;
+	background: blue;
+}/**/
+
+/**/
+
+.stop-Test{
+
+
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+	display: none;
+}
+
+.stop-Test span{
+	cursor: pointer;
+	width: 150px;
+	text-align: center;
+	height: 40px;
+	padding-top: 15px;
+	background: blue;
+}
+
+
+
+
+
+
+
+
+
+#Setting{
+
+	background: green;
+}
+#Termins{
+	background: purple;
+
+}
+
+.block-info-setting{
+		display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+}
+.block-info-setting .info-setting{
+
+		width: 500px;
+	min-height: 200px;
+	background: white;
+}
+.block-info-termins{
+		display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+
+}
+.block-info-termins .info-termins{
+		width: 500px;
+	min-height: 200px;
+	background: white;
+	padding-bottom: 25px;
+
+}
+.list-example-admin{background: red;
+	display: inline-block;
+}
+.list-example-admin span{
+	color: white;
+	float: left;
+	overflow-x:hidden;
+	margin-left: 15px;
+
+}
+.list-example-admin span div{
+	width: 100%;
+}
+
+.name-admin-e{ display: block;width: 190px;}
+.termin-admin-e{display: block;width: 300px;}
+.class-admin-e{display: block;width: 70px;}
+.bool-admin-e{display: block;width: 85px;}
+.del-admin-e{display: block;width: 80px;
+cursor: pointer;}
+.del-admin-e:hover{
+	text-decoration: underline;
+}
+
+.list-admin{
+	min-height: 60px;
+	background: green;
+}
+.list-admin span{
+	display: block;
+	color: white;
+	width: 90px;
+	float: left;
+	margin-left: 70px;
+}
+#line1{
+	background: red;height: 4px;float: right;
+}
+
+.block-termin-m{
+margin-top: 10px;
+margin-left: 20px;
+}
+
+.block-termin-m div{
+
+}
+.block-termin-m .name-main{
+margin-top: 5px;
+color: green;
+}
+.block-termin-m .describes-main{
+margin-left: 10px;
+color:red;
+}
+.settings-funcs{
+	color: orange;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.block-testing-main{
+
+	color: red;
+	margin-top: 25px;
+}
+.block-testing-main .info-testing-main{
+		background: white;
+			margin: 0 auto 0 auto;
+			width: 500px;
+			height: auto;
+			border-radius: 4px;
+			padding-bottom: 20px;
+			padding-top: 5px;
+			display: block;
+
+		
+}
+
+.block-testing-main .info-testing-main .block-repeat{
+	margin-top: 25px;
+	display: block;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+
+}
+.block-testing-main .info-testing-main .block-repeat .under{
+background: orange;
+	text-align: center;	padding-top: 10px;
+	padding-bottom: 10px;width: 450px;
+	border-radius: 3px;
+	color: white;
+	font-size: 1.2em;
+	cursor: pointer;
+	
+}
+.block-testing-main .info-testing-main .name-info-block{
+	color: white;
+	font-size: 1.2em;
+
+	display: flex;
+	justify-content: center;
+
+}
+.block-testing-main .info-testing-main .name-info-block span{
+	background: green;
+	display: block;
+	width: 250px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+		border-radius: 3px;
+}
+	.block-testing-main{
+		display: none;
+	}
+	.block-testing-main .info-testing-main .block-repeat .fonon{
+		background: green;
+	}
