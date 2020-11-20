@@ -1,53 +1,159 @@
 body{
 	padding: 0;
 	margin: 0;
-	margin: 0 auto 0 auto;width: 800px;height: auto;
+
+font-family: 'Roboto', sans-serif;
+background: #FFFFFF;
+
 }
 
-main{
-	margin-bottom: 40px;
+.form-main{
+	margin: 0 auto 0 auto;width: 1200px;height: auto;
+	padding-top: 150px;
+	font-size: 1.2em;
 }
+
 .main-Test{
 	display: block;
-	background: red;
+
 	color: white;
 	height: auto;
-	margin-top: 100px;
-	border-radius: 4px;
-	padding-bottom: 25px;
-}
-.main-Test .ul-categories {
 
-	background: orange;
-	height: 60px;
+
+}
+
+
+
+.bg-header{
+	font-size: 1.2em;
+	position: absolute;
+	display: block;
+	width: 100%;
+	background: #000;
+	height: auto;
+box-shadow:0px 1px 5px 0px rgba(0,0,0,0.7);
+
+
+}
+.ul-categories {
+font-family: 'Montserrat', sans-serif;
+	background: inherit;
 	display: flex;
 	justify-content: space-around;
+	margin: 0 auto 0 auto;width: 1000px;height: auto;
+	color:#E0E0E0;
+-webkit-box-shadow:0px 1px 5px 0px rgba(0,0,0,0.15);
+-moz-box-shadow:0px 1px 5px 0px rgba(0,0,0,0.15);
 }
-.main-Test .ul-categories span{
+.centeradmin{
+		margin: 0 auto 0 auto;width: 1000px;height: auto;
+}
+.ul-categories div{
+	padding-top: 20px;
 
+	display: block;
 	cursor: pointer;
-	margin-top: 10px;
-	padding-top: 10px;
-	width: 130px;
+
 	text-align: center;
-	height: 30px;
-	border-radius: 3px;
+
+	font-size: 1.6em;
+	transition: 0.3s ease 0.1s;
 
 
+	border-bottom-style: solid 115px red;
 }
-.main-Test .ul-categories span:hover{
+.ul-categories div:hover{
+	color: white;
+}
+.ul-categories div:hover .down1{
+	background: white;
+}
+.ul-categories div:hover .down2{
+	background: white;
+}
+.ul-categories div:hover .down3{
+	background: white;
+}
+.ul-categories div:hover .down4{
+	background: white;
+}
 
-	background: green;
-	
+
+.down1{
+transition: background 0.6s ease;
+	display: block;
+	padding-bottom: 5px;
+	margin-top: 20px;
+	background: white;
+
+}.down2{
+transition: background 0.6s ease;
+	display: block;
+	padding-bottom: 5px;
+	margin-top: 20px;
+
+}.down3{
+transition: background 0.6s ease;
+	display: block;
+	padding-bottom: 5px;
+	margin-top: 20px;
+
+}.down4{
+transition: background 0.6s ease;
+	display: block;
+	padding-bottom: 5px;
+	margin-top: 20px;
+
 }
 /**/
 
+.full-window{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.left-side{
+display: block;
+min-height: 200px;
+width:875px;
+background: orange;
+	background: #EBEBEB;
+box-shadow:0px 0px 5px 1px rgba(0,0,0,0.3);
+-webkit-box-shadow:0px 0px 5px 1px rgba(0,0,0,0.3);
+-moz-box-shadow:0px 0px 5px 1px rgba(0,0,0,0.3);
+padding-bottom: 25px;
+}
+.right-side{
+height: 450px;
+display: block;
+width:300px;
+background: blue;
+margin-left: 25px;
+
+	background: #EBEBEB;
+box-shadow:0px 0px 5px 1px rgba(0,0,0,0.3);
+-webkit-box-shadow:0px 0px 5px 1px rgba(0,0,0,0.3);
+-moz-box-shadow:0px 0px 5px 1px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .start-Test{
 
-
+	padding-top: 30px;
 	display: flex;
 	justify-content: space-around;
-	margin-top: 25px;
+
 }
 
 .start-Test span{
@@ -58,6 +164,24 @@ main{
 	padding-top: 15px;
 	background: blue;
 }/**/
+.stop-Test{
+
+
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+	display: none;
+}
+
+.stop-Test span{
+	cursor: pointer;
+	width: 150px;
+	text-align: center;
+	height: 40px;
+	padding-top: 15px;
+	background: red;
+}
+
 
 
 .next-Test{
@@ -87,6 +211,24 @@ main{
 
 
 
+.dstart-Testu{
+
+
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+}
+
+.dstart-Testu span{
+
+	width: 150px;
+	text-align: center;
+	height: 40px;
+	padding-top: 15px;
+	background: blue;
+}/**/
+
+
 .dstart-Test{
 
 
@@ -96,7 +238,7 @@ main{
 }
 
 .dstart-Test span{
-	cursor: pointer;
+
 	width: 150px;
 	text-align: center;
 	height: 40px;
@@ -105,24 +247,6 @@ main{
 }/**/
 
 /**/
-
-.stop-Test{
-
-
-	display: flex;
-	justify-content: space-around;
-	margin-top: 25px;
-	display: none;
-}
-
-.stop-Test span{
-	cursor: pointer;
-	width: 150px;
-	text-align: center;
-	height: 40px;
-	padding-top: 15px;
-	background: blue;
-}
 
 
 
@@ -134,7 +258,7 @@ main{
 
 #Setting{
 
-	background: green;
+	background: ;
 }
 #Termins{
 	background: purple;
@@ -144,11 +268,11 @@ main{
 .block-info-setting{
 		display: flex;
 	justify-content: space-around;
-	margin-top: 25px;
+	margin-top: 45px;
 }
 .block-info-setting .info-setting{
 
-		width: 500px;
+		width: 240px;
 	min-height: 200px;
 	background: white;
 }
@@ -159,10 +283,9 @@ main{
 
 }
 .block-info-termins .info-termins{
-		width: 500px;
-	min-height: 200px;
-	background: white;
-	padding-bottom: 25px;
+
+
+
 
 }
 .list-example-admin{background: red;
@@ -203,22 +326,47 @@ cursor: pointer;}
 #line1{
 	background: red;height: 4px;float: right;
 }
-
+/*ferhr4htrhtrh54tjh*/
 .block-termin-m{
 margin-top: 10px;
 margin-left: 20px;
+width: 700px;
+display: block;
+background: white;
+margin-top: 25px;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 15px;
+padding-right: 15px;
+
+
+box-shadow:0px 0px 5px 1px rgba(0,0,0,0.3);
+-webkit-box-shadow:0px 0px 5px 1px rgba(0,0,0,0.3);
+-moz-box-shadow:0px 0px 5px 1px rgba(0,0,0,0.3);
+border-radius: 2px;
 }
 
 .block-termin-m div{
 
 }
+.block-termin-m header{
+	margin-top: 15px;
+	display: flex;
+}
 .block-termin-m .name-main{
 margin-top: 5px;
 color: green;
+font-weight:bold;
+width: 95%;
+margin-left: 25px;
 }
 .block-termin-m .describes-main{
-margin-left: 10px;
+	margin-top: 15px;
+margin-left: 50px;
 color:red;
+width: 90%;
+
+
 }
 .settings-funcs{
 	color: orange;
@@ -229,15 +377,15 @@ color:red;
 .block-testing-main{
 
 	color: red;
-	margin-top: 25px;
+	margin-top: 35px;
 }
 .block-testing-main .info-testing-main{
-		background: white;
+		background: inherit;
 			margin: 0 auto 0 auto;
-			width: 500px;
+			width: 700px;
 			height: auto;
-			border-radius: 4px;
-			padding-bottom: 20px;
+			border-radius: 2px;
+			padding-bottom: 25px;
 			padding-top: 5px;
 			display: block;
 
@@ -255,11 +403,18 @@ color:red;
 .block-testing-main .info-testing-main .block-repeat .under{
 background: orange;
 	text-align: center;	padding-top: 10px;
-	padding-bottom: 10px;width: 450px;
-	border-radius: 3px;
+	padding-bottom: 10px;max-width: 700px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 2px;
 	color: white;
 	font-size: 1.2em;
 	cursor: pointer;
+	box-shadow:0px 0px 0px 1px rgba(0,0,0,0.1);
+-webkit-box-shadow:0px 0px 0px 1px rgba(0,0,0,0.1);
+-moz-box-shadow:0px 0px 0px 1px rgba(0,0,0,0.1);
+
+
 	
 }
 .block-testing-main .info-testing-main .name-info-block{
@@ -268,16 +423,22 @@ background: orange;
 
 	display: flex;
 	justify-content: center;
+	margin-bottom: 50px;
 
 }
 .block-testing-main .info-testing-main .name-info-block span{
 	background: green;
 	display: block;
-	width: 250px;
+	max-width: 700px;
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
 		border-radius: 3px;
+		box-shadow:0px 0px 0px 1px rgba(0,0,0,0.1);
+-webkit-box-shadow:0px 0px 0px 1px rgba(0,0,0,0.1);
+-moz-box-shadow:0px 0px 0px 1px rgba(0,0,0,0.1);
+	padding-left: 25px;
+	padding-right: 25px;
 }
 	.block-testing-main{
 		display: none;
@@ -285,3 +446,46 @@ background: orange;
 	.block-testing-main .info-testing-main .block-repeat .fonon{
 		background: green;
 	}
+
+
+
+	#fizika{
+		display: block;
+
+	}
+
+	#programming{
+		display: none;
+
+	}
+
+	#inform{
+		display: none;
+
+	}
+
+	#english{
+		display: none;
+
+	}
+
+	.toolad{
+		display: flex;
+		justify-content: flex-start;
+		margin-top: 50px;
+	}
+	.toolad div{
+			margin-left: 50px;
+			background: purple;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			color:white;
+			cursor: pointer;
+	}
+
+	.fizbl{display: block;}
+	.progbl{display: none;}
+	.infbl{display: none;}
+	.engbl{display: none;}
