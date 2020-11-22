@@ -44,7 +44,7 @@ refresh();
 		  });	
 		  	$scope.msg = id;
 	}
-newList();
+
 function newList() {
 	  $http({
     method : "GET",
@@ -56,6 +56,7 @@ function newList() {
   });
 
 }
+newList();
 /*Программирование*/
 
 
@@ -100,7 +101,7 @@ refreshprog();
 		  });	
 		  	$scope.msg = id;
 	}
-newListprog();
+
 function newListprog() {
 	  $http({
     method : "GET",
@@ -112,7 +113,7 @@ function newListprog() {
   });
 
 }
-
+newListprog();
 
 
 
@@ -127,6 +128,16 @@ function newListprog() {
       url : "/resource/handler/getinfoinf.php"
   }).then(function mySuccess(response) {
     $scope.myWelcomeinf = response.data;
+  }, function myError(response) {
+
+  });
+
+
+  $http({
+    method : "GET",
+      url : "/resource/handler/getinfoenglist.php"
+  }).then(function mySuccess(response) {
+    $scope.myWelcomeenglist = response.data;
   }, function myError(response) {
 
   });
@@ -163,7 +174,7 @@ refreshinf();
 		  });	
 		  	$scope.msg = id;
 	}
-newListinf();
+
 function newListinf() {
 	  $http({
     method : "GET",
@@ -175,7 +186,7 @@ function newListinf() {
   });
 
 }
-
+newListinf();
 
 
 
@@ -202,12 +213,14 @@ function refresheng() {
     $scope.myWelcomeeng = response.data;
   }, function myError(response) {
 
-  });}
+  });
+
+}
 
 
 
 
-$scope.deletedataeng=function(id){
+/*$scope.deletedataeng=function(id){
 
 
 		  $http({
@@ -222,20 +235,27 @@ refresheng();
 
 		  });	
 		  	$scope.msg = id;
-	}
-newListeng();
+	}*/
+
 function newListeng() {
-	  $http({
+/*	  $http({
     method : "GET",
       url : "/resource/handler/getnumbeng.php"
   }).then(function mySuccess(response) {
     $scope.myNumbeng = response.data;
   }, function myError(response) {
 
+  });*/
+  $http({
+    method : "GET",
+      url : "/resource/handler/getinfoeng.php"
+  }).then(function mySuccess(response) {
+    $scope.myWelcomeeng = response.data;
+  }, function myError(response) {
+
   });
-
 }
-
+newListeng();
 /*fin*/
 
 
@@ -254,69 +274,104 @@ function newListeng() {
 $scope.starttest = function(argument) {
 	// body...{{dispnone1}}  
 
-	$scope.dispnone1 = 'none';
-	$scope.dispnone2 = 'flex';
+	$scope.dispnone1fiz = 'none';
+	$scope.dispnone2fiz = 'flex';
 
 	newList();
 
-	$scope.statbrad = '';
-	$scope.more = 0;
-	$scope.colortest = '';
-	$scope.statusclick = '';
+	$scope.statbradf = '';
+	$scope.moref = 0;
+	$scope.colortestf = '';
+	$scope.statusclickf = '';
 }
+$scope.fintest = function(argument) {
+	// body...
+	$scope.dispnone1fiz = 'flex';
+	$scope.dispnone2fiz = 'none';
+}
+
+
 
 
 $scope.starttestprog = function(argument) {
 	// body...{{dispnone1}}  
 
-	$scope.dispnone1 = 'none';
-	$scope.dispnone2 = 'flex';
+	$scope.dispnone1prog = 'none';
+	$scope.dispnone2prog = 'flex';
 
 	newListprog();
 
-	$scope.statbrad = '';
-	$scope.more = 0;
-	$scope.colortest = '';
-	$scope.statusclick = '';
+	$scope.statbradp = '';
+	$scope.morep = 0;
+	$scope.colortestp = '';
+	$scope.statusclickp = '';
 }
+
+$scope.fintestprog = function(argument) {
+	// body...
+	$scope.dispnone1prog = 'flex';
+	$scope.dispnone2prog = 'none';
+}
+
 
 
 $scope.starttestinf = function(argument) {
 	// body...{{dispnone1}}  
 
-	$scope.dispnone1 = 'none';
-	$scope.dispnone2 = 'flex';
+	$scope.dispnone1inf = 'none';
+	$scope.dispnone2inf = 'flex';
 
 	newListinf();
 
-	$scope.statbrad = '';
-	$scope.more = 0;
-	$scope.colortest = '';
-	$scope.statusclick = '';
+	$scope.statbradi = '';
+	$scope.morei = 0;
+	$scope.colortesti = '';
+	$scope.statusclicki = '';
 }
+
+$scope.fintestinf = function(argument) {
+	// body...
+	$scope.dispnone1inf = 'flex';
+	$scope.dispnone2inf = 'none';
+}
+
 
 
 $scope.starttesteng = function(argument) {
 	// body...{{dispnone1}}  
 
-	$scope.dispnone1 = 'none';
-	$scope.dispnone2 = 'flex';
+	$scope.dispnone1eng = 'none';
+	$scope.dispnone2eng = 'flex';
 
 	newListeng();
 
-	$scope.statbrad = '';
-	$scope.more = 0;
-	$scope.colortest = '';
-	$scope.statusclick = '';
+	$scope.statbrade1 = '';
+	$scope.statbrade2 = '';
+	$scope.statbrade3 = '';
+	$scope.statbrade4 = '';
+	$scope.moree = 0;
+	$scope.colorteste1 = '';
+	$scope.colorteste2 = '';
+	$scope.colorteste3 = '';
+	$scope.colorteste4 = '';
+	$scope.statusclicke = '';
 }
 
-
-//
-$scope.fintest = function(argument) {
+$scope.fintesteng = function(argument) {
 	// body...
-	$scope.dispnone1 = 'flex';
-	$scope.dispnone2 = 'none';
+	$scope.dispnone1eng = 'flex';
+	$scope.dispnone2eng = 'none';
 }
+
+
+
+
+
+
+
+
+
+
 
 $scope.startfizika = function(argument) {
 	// body...
@@ -324,6 +379,8 @@ $scope.startfizika = function(argument) {
 	$scope.progblock = 'none';
 	$scope.informblock = 'none';
 	$scope.engblock = 'none';
+		// body...
+
 	$scope.down1 = 'white';
 	$scope.down2 = '';
 	$scope.down3 = '';
@@ -336,6 +393,8 @@ $scope.startprogramming = function(argument) {
 	$scope.progblock = 'block';
 	$scope.informblock = 'none';
 	$scope.engblock = 'none';
+
+
 	$scope.down1 = 'black';
 	$scope.down2 = 'white';
 	$scope.down3 = '';
@@ -348,6 +407,8 @@ $scope.startinform = function(argument) {
 	$scope.progblock = 'none';
 	$scope.informblock = 'block';
 	$scope.engblock = 'none';
+
+
 	$scope.down1 = 'black';
 	$scope.down2 = '';
 	$scope.down3 = 'white';
@@ -361,6 +422,8 @@ $scope.startenglish = function(argument) {
 	$scope.informblock = 'none';
 	$scope.engblock = 'block';
 	$scope.down1 = 'black';
+
+
 	$scope.down2 = '';
 	$scope.down3 = '';
 	$scope.down4 = 'white';
@@ -397,21 +460,139 @@ $scope.engad = function(argument) {
 	$scope.engdisp = 'block';
 }
 
+$scope.numfw = 0;
+$scope.numfl = 0;
+
+$scope.numpw = 0;
+$scope.numpl = 0;
+
+$scope.numiw = 0;
+$scope.numil = 0;
+
+$scope.numew = 0;
+$scope.numel = 0;
 
 
-
-$scope.clicktest = function(arg,on) {
-	if ($scope.more == 0) {
-	$scope.titleid = arg;
-	$scope.statbrad = '4px solid Gold';
-	$scope.more = 1;
+$scope.clicktestf = function(arg,on) {
+	if ($scope.moref == 0) {
+	$scope.titleidf = arg;
+	$scope.statbradf = '4px solid Gold';
+	$scope.moref = 1;
 		if (on == 'on'){
-		$scope.colortest = 'green';
+		$scope.colortestf = 'green';
+		$scope.numfw = $scope.numfw + 1;
+
 }else{
-		$scope.colortest = 'red';
-		$scope.statusclick = 'on';
+		$scope.colortestf = 'red';
+		$scope.statusclickf = 'on';
+		$scope.numfl = $scope.numfl + 1;
+}
+}
+
 
 }
+
+$scope.clicktestp = function(arg,on) {
+	if ($scope.morep == 0) {
+	$scope.titleidp = arg;
+	$scope.statbradp = '4px solid Gold';
+	$scope.morep = 1;
+		if (on == 'on'){
+		$scope.colortestp = 'green';
+		$scope.numpw = $scope.numpw+1;
+
+}else{
+		$scope.colortestp = 'red';
+		$scope.statusclickp = 'on';
+		$scope.numpl = $scope.numpl+1;
+}
+}
+
+
+}
+
+$scope.clicktesti = function(arg,on) {
+	if ($scope.morei == 0) {
+	$scope.titleidi = arg;
+	$scope.statbradi = '4px solid Gold';
+	$scope.morei = 1;
+		if (on == 'on'){
+		$scope.colortesti = 'green';
+		$scope.numiw = $scope.numiw+1;
+
+}else{
+		$scope.colortesti = 'red';
+		$scope.statusclicki = 'on';
+		$scope.numil = $scope.numil+1;
+}
+}
+
+
+}
+
+$scope.clickteste = function(arg,on,num) {
+	if ($scope.moree == 0) {
+	$scope.titleide = arg;
+
+	$scope.moree = 1;
+		if (on == arg){
+			if (num ==1) {
+						$scope.colorteste1 = 'green';
+						$scope.statbrade1 = '4px solid Gold';
+			}
+			if (num ==2) {
+						$scope.colorteste2 = 'green';
+						$scope.statbrade2 = '4px solid Gold';
+			}
+			if (num ==3) {
+						$scope.colorteste3 = 'green';
+						$scope.statbrade3 = '4px solid Gold';
+			}
+			if (num ==4) {
+						$scope.colorteste4 = 'green';
+						$scope.statbrade4 = '4px solid Gold';
+			}
+
+		$scope.numew = $scope.numew+1;
+
+}else{
+
+
+
+		if ($scope.myWelcomeeng.id1 == on) {$scope.colorteste1 = 'green';}
+		if ($scope.myWelcomeeng.id2 == on) {$scope.colorteste2 = 'green';}
+		if ($scope.myWelcomeeng.id3 == on) {$scope.colorteste3 = 'green';}
+		if ($scope.myWelcomeeng.id4 == on) {$scope.colorteste4 = 'green';}
+
+
+
+
+
+			if (num ==1) {
+						$scope.colorteste1 = 'red';
+						$scope.statbrade1 = '4px solid Gold';
+			}
+			if (num ==2) {
+						$scope.colorteste2 = 'red';
+						$scope.statbrade2 = '4px solid Gold';
+			}
+			if (num ==3) {
+						$scope.colorteste3 = 'red';
+						$scope.statbrade3 = '4px solid Gold';
+			}
+			if (num ==4) {
+						$scope.colorteste4 = 'red';
+						$scope.statbrade4 = '4px solid Gold';
+			}
+
+		$scope.statusclicke = 'on';
+		$scope.numel = $scope.numel+1;
+}
+
+
+
+
+
 }
 
 

@@ -1,11 +1,9 @@
 <?= Headers($titleName); ?>
 <div><a href="/">Главная</a></div>
 
-<?php 
 
-if ($_SESSION['auth'] == 1){
-echo '<div class="centeradmin"><a href="logout">Выход</a>';
-echo '
+<div class="centeradmin"><a href="logout">Выход</a>
+
 
 <form action="/AddProcess" method="POST" style="margin-top: 50px;">
 	Название термина:	<br><input type="text" name="name"><br><br>
@@ -41,7 +39,7 @@ echo '
 
 </div>
 
-<div class="list-example-admin" ng-repeat="title in myWelcome | orderBy: \'-class\'" >
+<div class="list-example-admin" ng-repeat="title in myWelcome | orderBy: '-class'" >
 	<span class="name-admin-e" style="	text-align: center;">{{title.name}}</span>
 	<span class="termin-admin-e">{{title.describes}}</span>
 	<span class="class-admin-e" style="	text-align: center;">{{title.class}}</span>
@@ -63,7 +61,7 @@ echo '
 
 </div>
 
-<div class="list-example-admin" ng-repeat="title in myWelcomeprog | orderBy: \'-class\'" >
+<div class="list-example-admin" ng-repeat="title in myWelcomeprog | orderBy: '-class'" >
 	<span class="name-admin-e" style="	text-align: center;">{{title.name}}</span>
 	<span class="termin-admin-e">{{title.describes}}</span>
 	<span class="class-admin-e" style="	text-align: center;">{{title.class}}</span>
@@ -84,7 +82,7 @@ echo '
 
 </div>
 
-<div class="list-example-admin" ng-repeat="title in myWelcomeinf | orderBy: \'-class\'" >
+<div class="list-example-admin" ng-repeat="title in myWelcomeinf | orderBy: '-class'" >
 	<span class="name-admin-e" style="	text-align: center;">{{title.name}}</span>
 	<span class="termin-admin-e">{{title.describes}}</span>
 	<span class="class-admin-e" style="	text-align: center;">{{title.class}}</span>
@@ -105,7 +103,7 @@ echo '
 
 </div>
 
-<div class="list-example-admin" ng-repeat="title in myWelcomeenglist | orderBy: \'-class\'" >
+<div class="list-example-admin" ng-repeat="title in myWelcomeeng | orderBy: '-class'" >
 	<span class="name-admin-e" style="	text-align: center;">{{title.name}}</span>
 	<span class="termin-admin-e">{{title.describes}}</span>
 	<span class="class-admin-e" style="	text-align: center;">{{title.class}}</span>
@@ -138,23 +136,8 @@ echo '
 
 </div>
 
-' ;
 
-}
-else{
 
-echo '<div class="centeradmin"><div style="margin-top: 50px;display: block;">Вход</div>
-<form method="POST" action="/accountProcess">
-	
-<br><input type="text" name="login" placeholder="Логин" maxlength="10" pattern="[A-Za-z-0-9]{3,10}" title="Не менее 3 и неболее 10 латынских символов или цифр." required>
-<br><input type="password" name="password" placeholder="Пароль" maxlength="15"  pattern="[A-Za-z-0-9]{5,15}" title="Не менее 5 и неболее 15 латынских символов или цифр." required>
-<br><br><input type="submit" name="enter_l" value="Вход">
-
-</form></div>';
-
-}
-
- ?>
 <!-- 
 
 <form action="/AddProcess" method="POST" style="margin-top: 50px;">
